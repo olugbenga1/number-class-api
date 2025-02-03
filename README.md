@@ -71,12 +71,12 @@ Access the API at:
 
 ### Fields
 
-`number`: A positive integer.
-`is_prime`: A natural number greater than 1 that is not a product of two smaller natural numbers
-`is_perfect`: A positive integer that is equal to the sum of its positive proper divisors, that is, divisors excluding the number itself
-`properties`: An array, and the possible combinations for properties include `['armstrong', 'odd']`, `['armstrong', 'even']`, `['odd']`, `['even']`
-`digit_sum`: sum of the digits of a number i.e. 128 -> 1 + 2 + 8 = 11.
-`fun_fact`: fun fact about a number gotten from [numbers API](http://numbersapi.com/#42).
+- `number`: A positive integer.
+- `is_prime`: A natural number greater than 1 that is not a product of two smaller natural numbers
+- `is_perfect`: A positive integer that is equal to the sum of its positive proper divisors, that is, divisors excluding the number itself
+- `properties`: An array, and the possible combinations for properties include `['armstrong', 'odd']`, `['armstrong', 'even']`, `['odd']`, `['even']`
+- `digit_sum`: sum of the digits of a number i.e. 128 -> 1 + 2 + 8 = 11.
+- `fun_fact`: fun fact about a number gotten from [numbers API](http://numbersapi.com/#42).
 
 ### Key Notes
 
