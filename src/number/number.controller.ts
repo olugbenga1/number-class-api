@@ -11,7 +11,7 @@ export class NumberController {
       return await this.numberService.classifyNumber(number);
     } catch (error) {
       throw new BadRequestException({
-        number: number,
+        number: 'alphabet',
         error: true,
       });
     }

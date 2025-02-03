@@ -57,7 +57,7 @@ export class NumberService {
     const parsedNumber = parseInt(number, 10);
     if (isNaN(parsedNumber)) {
       throw new BadRequestException({
-        number: number,
+        number: 'alphabet',
         error: true,
       });
     }
