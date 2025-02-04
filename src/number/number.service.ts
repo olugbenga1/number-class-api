@@ -65,13 +65,14 @@ export class NumberService {
 
   async classifyNumber(number: string) {
     // Input validation
-    const parsedNumber = parseInt(number, 10);
-    if (isNaN(parsedNumber)) {
+    if (!/^-?\d+$/.test(number)) {
       throw new BadRequestException({
-        number: 'alphabet',
+        number: number,
         error: true,
       });
     }
+
+    const parsedNumber = parseInt(number, 10);
 
     // Mathematical properties
     const isPrime = this.isPrime(parsedNumber);
