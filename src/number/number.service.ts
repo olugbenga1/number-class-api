@@ -36,10 +36,21 @@ export class NumberService {
   }
 
   private calculateDigitSum(num: number): number {
-    return num
-      .toString()
-      .split('')
-      .reduce((sum, digit) => sum + parseInt(digit, 10), 0);
+    const numStr = num.toString();
+    let sum = 0;
+
+    if (numStr[0] === '-') {
+      sum -= parseInt(numStr[1], 10);
+      for (let i = 2; i < numStr.length; i++) {
+        sum += parseInt(numStr[i], 10);
+      }
+    } else {
+      for (let i = 0; i < numStr.length; i++) {
+        sum += parseInt(numStr[i], 10);
+      }
+    }
+
+    return sum;
   }
 
   private async getFunFact(num: number): Promise<string> {
